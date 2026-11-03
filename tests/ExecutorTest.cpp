@@ -63,4 +63,36 @@ TEST(ExecutorTest, should_return_y_minus_1_given_command_is_M_and_facing_is_S)
     ASSERT_EQ(target, executor->Query());
 }
 
+TEST(ExecutorTest, should_return_facing_N_given_command_is_L_and_facing_is_E)
+{
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({2, 3, 'E'}));
+    executor->Execute("L");
+    const Pose target{2, 3, 'N'};
+    ASSERT_EQ(target, executor->Query());
+}
+
+TEST(ExecutorTest, should_return_facing_W_given_command_is_L_and_facing_is_N)
+{
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({2, 3, 'N'}));
+    executor->Execute("L");
+    const Pose target{2, 3, 'W'};
+    ASSERT_EQ(target, executor->Query());
+}
+
+TEST(ExecutorTest, should_return_facing_S_given_command_is_L_and_facing_is_W)
+{
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({2, 3, 'W'}));
+    executor->Execute("L");
+    const Pose target{2, 3, 'S'};
+    ASSERT_EQ(target, executor->Query());
+}
+
+TEST(ExecutorTest, should_return_facing_E_given_command_is_L_and_facing_is_S)
+{
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({2, 3, 'S'}));
+    executor->Execute("L");
+    const Pose target{2, 3, 'E'};
+    ASSERT_EQ(target, executor->Query());
+}
+
 } // namespace adas
