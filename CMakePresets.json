@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "wsl-debug",
+      "displayName": "WSL Debug",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/wsl-debug",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug", "BUILD_TESTING": "ON" }
+    }
+  ],
+  "buildPresets": [ { "name": "wsl-debug", "configurePreset": "wsl-debug" } ],
+  "testPresets": [ { "name": "wsl-debug", "configurePreset": "wsl-debug", "output": { "outputOnFailure": true } } ]
+}

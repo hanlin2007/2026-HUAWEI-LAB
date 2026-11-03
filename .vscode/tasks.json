@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "CMake: configure (WSL)", "type": "shell", "command": "cmake --preset wsl-debug", "problemMatcher": [] },
+    { "label": "CMake: build (WSL)", "type": "shell", "command": "cmake --build --preset wsl-debug", "dependsOn": "CMake: configure (WSL)", "group": { "kind": "build", "isDefault": true }, "problemMatcher": "$gcc" },
+    { "label": "CTest: run (WSL)", "type": "shell", "command": "ctest --preset wsl-debug", "dependsOn": "CMake: build (WSL)", "problemMatcher": [] }
+  ]
+}

@@ -1,0 +1,11 @@
+/build/
+/bin/
+/.cache/
+*.o
+*.a
+*.exe
+
+*.md
+
+/ppt
+
