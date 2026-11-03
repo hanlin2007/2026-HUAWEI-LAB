@@ -4,10 +4,7 @@
 
 namespace adas {
 
-ExecutorImpl::ExecutorImpl(const Pose &initialPose) noexcept : pose{0, 0, 'N'}
-{
-    (void)initialPose;
-}
+ExecutorImpl::ExecutorImpl(const Pose &pose) noexcept : pose(pose) {}
 
 Pose ExecutorImpl::Query(void) const noexcept
 {
