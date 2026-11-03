@@ -39,4 +39,28 @@ TEST(ExecutorTest, should_return_x_plus_1_given_command_is_M_and_facing_is_E)
     ASSERT_EQ(target, executor->Query());
 }
 
+TEST(ExecutorTest, should_return_x_minus_1_given_command_is_M_and_facing_is_W)
+{
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({2, 3, 'W'}));
+    executor->Execute("M");
+    const Pose target{1, 3, 'W'};
+    ASSERT_EQ(target, executor->Query());
+}
+
+TEST(ExecutorTest, should_return_y_plus_1_given_command_is_M_and_facing_is_N)
+{
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({2, 3, 'N'}));
+    executor->Execute("M");
+    const Pose target{2, 4, 'N'};
+    ASSERT_EQ(target, executor->Query());
+}
+
+TEST(ExecutorTest, should_return_y_minus_1_given_command_is_M_and_facing_is_S)
+{
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({2, 3, 'S'}));
+    executor->Execute("M");
+    const Pose target{2, 2, 'S'};
+    ASSERT_EQ(target, executor->Query());
+}
+
 } // namespace adas
