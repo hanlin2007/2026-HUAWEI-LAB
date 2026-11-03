@@ -34,6 +34,13 @@ void ExecutorImpl::Execute(const std::string &commands) noexcept
             else if (pose.heading == 'W') { pose.heading = 'S'; }
             else if (pose.heading == 'S') { pose.heading = 'E'; }
         }
+        else if (cmd == 'R')
+        {
+            if (pose.heading == 'E')      { pose.heading = 'S'; }
+            else if (pose.heading == 'S') { pose.heading = 'W'; }
+            else if (pose.heading == 'W') { pose.heading = 'N'; }
+            else if (pose.heading == 'N') { pose.heading = 'E'; }
+        }
     }
 }
 

@@ -127,4 +127,25 @@ TEST(ExecutorTest, should_return_facing_E_given_command_is_R_and_facing_is_N)
     ASSERT_EQ(target, executor->Query());
 }
 
+TEST(ExecutorTest, should_execute_combined_commands_in_order)
+{
+    std::unique_ptr<Executor> executor(Executor::NewExecutor());
+    executor->Execute("MLMMRM");
+    const Pose target{-2, 2, 'N'};
+    ASSERT_EQ(target, executor->Query());
+}
+
+TEST(ExecutorTest, should_preserve_pose_for_empty_commands_and_continue_across_calls)
+{
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({2, 3, 'E'}));
+    executor->Execute("");
+    const Pose initial{2, 3, 'E'};
+    ASSERT_EQ(initial, executor->Query());
+
+    executor->Execute("LM");
+    executor->Execute("RM");
+    const Pose target{3, 4, 'E'};
+    ASSERT_EQ(target, executor->Query());
+}
+
 } // namespace adas
