@@ -17,6 +17,7 @@ public:
 
 public:
     Pose Query(void) const noexcept override;
+    void Execute(const std::string &commands) noexcept override;
 
 private:
     Pose pose;

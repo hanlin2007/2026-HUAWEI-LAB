@@ -29,6 +29,7 @@ namespace adas
             // 如何理解这里移动的构造和赋值也不隐式生成了
 
         public:
+            virtual void Execute(const std::string& command) noexcept = 0;
             virtual Pose Query(void) const noexcept = 0; // 纯虚函数，要求派生类必须实现该方法，const 表示不会修改对象状态
     };
 }

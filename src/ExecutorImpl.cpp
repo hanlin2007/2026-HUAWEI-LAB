@@ -16,4 +16,9 @@ Executor *Executor::NewExecutor(const Pose &pose) noexcept
     return new (std::nothrow) ExecutorImpl(pose);
 }
 
+void ExecutorImpl::Execute(const std::string &commands) noexcept
+{
+    (void)commands;
+}
+
 } // namespace adas
