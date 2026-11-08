@@ -29,6 +29,15 @@ private:
         }
     };
 
+    class TurnLeftCommand final
+    {
+    public:
+        void DoOperate(ExecutorImpl& executor) const noexcept
+        {
+            executor.TurnLeft();
+        }
+    };
+
     void Move() noexcept;
     void TurnLeft() noexcept;
     void TurnRight() noexcept;
