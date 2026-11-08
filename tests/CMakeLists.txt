@@ -1,7 +1,7 @@
 set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
 add_subdirectory(googletest EXCLUDE_FROM_ALL)
 
-add_executable(adas_tests ExecutorTest.cpp)
+add_executable(adas_tests ExecutorTest.cpp ExecutorFastTest.cpp PoseEq.cpp)
 target_link_libraries(adas_tests PRIVATE adas gtest_main)
 
 include(GoogleTest)
