@@ -6,7 +6,7 @@
 namespace adas {
 
 // Executor 的具体实现
-class ExecutorImpl : public Executor
+class ExecutorImpl final : public Executor
 {
 public:
     explicit ExecutorImpl(const Pose &pose) noexcept;
@@ -20,6 +20,15 @@ public:
     void Execute(const std::string &commands) noexcept override;
 
 private:
+    class MoveCommand final
+    {
+    public:
+        void DoOperate(ExecutorImpl& executor) const noexcept
+        {
+            executor.Move();
+        }
+    };
+
     void Move() noexcept;
     void TurnLeft() noexcept;
     void TurnRight() noexcept;
