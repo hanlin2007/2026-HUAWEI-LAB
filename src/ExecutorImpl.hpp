@@ -21,6 +21,7 @@ public:
 
 private:
     void Move() noexcept;
+    void TurnLeft() noexcept;
 
     Pose pose;
 };
