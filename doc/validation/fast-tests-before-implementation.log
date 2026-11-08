@@ -1,0 +1,120 @@
+Test project /mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/build/wsl-debug
+      Start  1: ExecutorTest.should_return_init_pose_when_without_command
+ 1/20 Test  #1: ExecutorTest.should_return_init_pose_when_without_command ...............................................   Passed    0.03 sec
+      Start  2: ExecutorTest.should_return_default_pose_when_without_init_and_command
+ 2/20 Test  #2: ExecutorTest.should_return_default_pose_when_without_init_and_command ...................................   Passed    0.03 sec
+      Start  3: ExecutorTest.should_return_x_plus_1_given_command_is_M_and_facing_is_E
+ 3/20 Test  #3: ExecutorTest.should_return_x_plus_1_given_command_is_M_and_facing_is_E ..................................   Passed    0.03 sec
+      Start  4: ExecutorTest.should_return_x_minus_1_given_command_is_M_and_facing_is_W
+ 4/20 Test  #4: ExecutorTest.should_return_x_minus_1_given_command_is_M_and_facing_is_W .................................   Passed    0.03 sec
+      Start  5: ExecutorTest.should_return_y_plus_1_given_command_is_M_and_facing_is_N
+ 5/20 Test  #5: ExecutorTest.should_return_y_plus_1_given_command_is_M_and_facing_is_N ..................................   Passed    0.03 sec
+      Start  6: ExecutorTest.should_return_y_minus_1_given_command_is_M_and_facing_is_S
+ 6/20 Test  #6: ExecutorTest.should_return_y_minus_1_given_command_is_M_and_facing_is_S .................................   Passed    0.04 sec
+      Start  7: ExecutorTest.should_return_facing_N_given_command_is_L_and_facing_is_E
+ 7/20 Test  #7: ExecutorTest.should_return_facing_N_given_command_is_L_and_facing_is_E ..................................   Passed    0.02 sec
+      Start  8: ExecutorTest.should_return_facing_W_given_command_is_L_and_facing_is_N
+ 8/20 Test  #8: ExecutorTest.should_return_facing_W_given_command_is_L_and_facing_is_N ..................................   Passed    0.04 sec
+      Start  9: ExecutorTest.should_return_facing_S_given_command_is_L_and_facing_is_W
+ 9/20 Test  #9: ExecutorTest.should_return_facing_S_given_command_is_L_and_facing_is_W ..................................   Passed    0.02 sec
+      Start 10: ExecutorTest.should_return_facing_E_given_command_is_L_and_facing_is_S
+10/20 Test #10: ExecutorTest.should_return_facing_E_given_command_is_L_and_facing_is_S ..................................   Passed    0.03 sec
+      Start 11: ExecutorTest.should_return_facing_S_given_command_is_R_and_facing_is_E
+11/20 Test #11: ExecutorTest.should_return_facing_S_given_command_is_R_and_facing_is_E ..................................   Passed    0.02 sec
+      Start 12: ExecutorTest.should_return_facing_W_given_command_is_R_and_facing_is_S
+12/20 Test #12: ExecutorTest.should_return_facing_W_given_command_is_R_and_facing_is_S ..................................   Passed    0.02 sec
+      Start 13: ExecutorTest.should_return_facing_N_given_command_is_R_and_facing_is_W
+13/20 Test #13: ExecutorTest.should_return_facing_N_given_command_is_R_and_facing_is_W ..................................   Passed    0.03 sec
+      Start 14: ExecutorTest.should_return_facing_E_given_command_is_R_and_facing_is_N
+14/20 Test #14: ExecutorTest.should_return_facing_E_given_command_is_R_and_facing_is_N ..................................   Passed    0.04 sec
+      Start 15: ExecutorTest.should_execute_combined_commands_in_order
+15/20 Test #15: ExecutorTest.should_execute_combined_commands_in_order ..................................................   Passed    0.03 sec
+      Start 16: ExecutorTest.should_preserve_pose_for_empty_commands_and_continue_across_calls
+16/20 Test #16: ExecutorTest.should_preserve_pose_for_empty_commands_and_continue_across_calls ..........................   Passed    0.04 sec
+      Start 17: ExecutorFastTest.should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E
+17/20 Test #17: ExecutorFastTest.should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E ...............***Failed    0.04 sec
+Running main() from /mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/googletest/googletest/src/gtest_main.cc
+Note: Google Test filter = ExecutorFastTest.should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExecutorFastTest
+[ RUN      ] ExecutorFastTest.should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E
+/mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/ExecutorFastTest.cpp:17: Failure
+Expected equality of these values:
+  target
+    Which is: 12-byte object <02-00 00-00 00-00 00-00 45-A4 87-2D>
+  executor->Query()
+    Which is: 12-byte object <01-00 00-00 00-00 00-00 45-A4 87-2D>
+[  FAILED  ] ExecutorFastTest.should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E (0 ms)
+[----------] 1 test from ExecutorFastTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ExecutorFastTest.should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E
+
+ 1 FAILED TEST
+
+      Start 18: ExecutorFastTest.should_return_N_and_x_plus_1_given_status_is_fast_command_is_L_and_facing_is_E
+18/20 Test #18: ExecutorFastTest.should_return_N_and_x_plus_1_given_status_is_fast_command_is_L_and_facing_is_E .........***Failed    0.04 sec
+Running main() from /mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/googletest/googletest/src/gtest_main.cc
+Note: Google Test filter = ExecutorFastTest.should_return_N_and_x_plus_1_given_status_is_fast_command_is_L_and_facing_is_E
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExecutorFastTest
+[ RUN      ] ExecutorFastTest.should_return_N_and_x_plus_1_given_status_is_fast_command_is_L_and_facing_is_E
+/mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/ExecutorFastTest.cpp:26: Failure
+Expected equality of these values:
+  target
+    Which is: 12-byte object <01-00 00-00 00-00 00-00 4E-A4 8B-A5>
+  executor->Query()
+    Which is: 12-byte object <00-00 00-00 00-00 00-00 4E-A4 8B-A5>
+[  FAILED  ] ExecutorFastTest.should_return_N_and_x_plus_1_given_status_is_fast_command_is_L_and_facing_is_E (0 ms)
+[----------] 1 test from ExecutorFastTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ExecutorFastTest.should_return_N_and_x_plus_1_given_status_is_fast_command_is_L_and_facing_is_E
+
+ 1 FAILED TEST
+
+      Start 19: ExecutorFastTest.should_return_S_and_x_plus_1_given_status_is_fast_given_command_is_R_and_facing_is_E
+19/20 Test #19: ExecutorFastTest.should_return_S_and_x_plus_1_given_status_is_fast_given_command_is_R_and_facing_is_E ...***Failed    0.04 sec
+Running main() from /mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/googletest/googletest/src/gtest_main.cc
+Note: Google Test filter = ExecutorFastTest.should_return_S_and_x_plus_1_given_status_is_fast_given_command_is_R_and_facing_is_E
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExecutorFastTest
+[ RUN      ] ExecutorFastTest.should_return_S_and_x_plus_1_given_status_is_fast_given_command_is_R_and_facing_is_E
+/mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/ExecutorFastTest.cpp:35: Failure
+Expected equality of these values:
+  target
+    Which is: 12-byte object <01-00 00-00 00-00 00-00 53-74 FA-FA>
+  executor->Query()
+    Which is: 12-byte object <00-00 00-00 00-00 00-00 53-74 FA-FA>
+[  FAILED  ] ExecutorFastTest.should_return_S_and_x_plus_1_given_status_is_fast_given_command_is_R_and_facing_is_E (0 ms)
+[----------] 1 test from ExecutorFastTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ExecutorFastTest.should_return_S_and_x_plus_1_given_status_is_fast_given_command_is_R_and_facing_is_E
+
+ 1 FAILED TEST
+
+      Start 20: ExecutorFastTest.should_return_y_plus_1_given_command_is_FFM_and_facing_is_N
+20/20 Test #20: ExecutorFastTest.should_return_y_plus_1_given_command_is_FFM_and_facing_is_N ............................   Passed    0.03 sec
+
+85% tests passed, 3 tests failed out of 20
+
+Total Test time (real) =   1.39 sec
+
+The following tests FAILED:
+	 17 - ExecutorFastTest.should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E (Failed)
+	 18 - ExecutorFastTest.should_return_N_and_x_plus_1_given_status_is_fast_command_is_L_and_facing_is_E (Failed)
+	 19 - ExecutorFastTest.should_return_S_and_x_plus_1_given_status_is_fast_given_command_is_R_and_facing_is_E (Failed)
+Errors while running CTest

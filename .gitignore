@@ -9,3 +9,7 @@
 
 /ppt
 
+
+# Keep the experiment submission documentation in version control.
+!/README.md
+!/doc/LAB2.md

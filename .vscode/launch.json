@@ -5,7 +5,7 @@
       "name": "Debug ADAS (WSL)",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/wsl-debug/src/adas",
+      "program": "${workspaceFolder}/build/wsl-debug/src/adas_demo",
       "cwd": "${workspaceFolder}",
       "MIMode": "gdb",
       "miDebuggerPath": "/usr/bin/gdb",
