@@ -20,6 +20,8 @@ public:
     void Execute(const std::string &commands) noexcept override;
 
 private:
+    void Move() noexcept;
+
     Pose pose;
 };
 
