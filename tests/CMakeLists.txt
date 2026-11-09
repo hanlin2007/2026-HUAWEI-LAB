@@ -5,6 +5,7 @@ add_executable(adas_tests
     ExecutorTest.cpp
     ExecutorFastTest.cpp
     ExecutorFastRegressionTest.cpp
+    StateTypesTest.cpp
     PoseEq.cpp
 )
 target_link_libraries(adas_tests PRIVATE adas gtest_main)
