@@ -6,6 +6,11 @@ Point& Point::operator+=(const Point& rhs) noexcept {
     y += rhs.y;
     return *this;
 }
+Point& Point::operator-=(const Point& rhs) noexcept {
+    x -= rhs.x;
+    y -= rhs.y;
+    return *this;
+}
 int Point::GetX() const noexcept { return x; }
 int Point::GetY() const noexcept { return y; }
 } // namespace adas

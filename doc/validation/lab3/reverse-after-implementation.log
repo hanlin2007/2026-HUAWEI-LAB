@@ -1,0 +1,105 @@
+Test project /mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/build/wsl-debug
+      Start  1: ExecutorTest.should_return_init_pose_when_without_command
+ 1/50 Test  #1: ExecutorTest.should_return_init_pose_when_without_command ..............................................................................................................................................   Passed    0.01 sec
+      Start  2: ExecutorTest.should_return_default_pose_when_without_init_and_command
+ 2/50 Test  #2: ExecutorTest.should_return_default_pose_when_without_init_and_command ..................................................................................................................................   Passed    0.01 sec
+      Start  3: ExecutorTest.should_return_x_plus_1_given_command_is_M_and_facing_is_E
+ 3/50 Test  #3: ExecutorTest.should_return_x_plus_1_given_command_is_M_and_facing_is_E .................................................................................................................................   Passed    0.01 sec
+      Start  4: ExecutorTest.should_return_x_minus_1_given_command_is_M_and_facing_is_W
+ 4/50 Test  #4: ExecutorTest.should_return_x_minus_1_given_command_is_M_and_facing_is_W ................................................................................................................................   Passed    0.01 sec
+      Start  5: ExecutorTest.should_return_y_plus_1_given_command_is_M_and_facing_is_N
+ 5/50 Test  #5: ExecutorTest.should_return_y_plus_1_given_command_is_M_and_facing_is_N .................................................................................................................................   Passed    0.01 sec
+      Start  6: ExecutorTest.should_return_y_minus_1_given_command_is_M_and_facing_is_S
+ 6/50 Test  #6: ExecutorTest.should_return_y_minus_1_given_command_is_M_and_facing_is_S ................................................................................................................................   Passed    0.01 sec
+      Start  7: ExecutorTest.should_return_facing_N_given_command_is_L_and_facing_is_E
+ 7/50 Test  #7: ExecutorTest.should_return_facing_N_given_command_is_L_and_facing_is_E .................................................................................................................................   Passed    0.01 sec
+      Start  8: ExecutorTest.should_return_facing_W_given_command_is_L_and_facing_is_N
+ 8/50 Test  #8: ExecutorTest.should_return_facing_W_given_command_is_L_and_facing_is_N .................................................................................................................................   Passed    0.01 sec
+      Start  9: ExecutorTest.should_return_facing_S_given_command_is_L_and_facing_is_W
+ 9/50 Test  #9: ExecutorTest.should_return_facing_S_given_command_is_L_and_facing_is_W .................................................................................................................................   Passed    0.01 sec
+      Start 10: ExecutorTest.should_return_facing_E_given_command_is_L_and_facing_is_S
+10/50 Test #10: ExecutorTest.should_return_facing_E_given_command_is_L_and_facing_is_S .................................................................................................................................   Passed    0.01 sec
+      Start 11: ExecutorTest.should_return_facing_S_given_command_is_R_and_facing_is_E
+11/50 Test #11: ExecutorTest.should_return_facing_S_given_command_is_R_and_facing_is_E .................................................................................................................................   Passed    0.01 sec
+      Start 12: ExecutorTest.should_return_facing_W_given_command_is_R_and_facing_is_S
+12/50 Test #12: ExecutorTest.should_return_facing_W_given_command_is_R_and_facing_is_S .................................................................................................................................   Passed    0.01 sec
+      Start 13: ExecutorTest.should_return_facing_N_given_command_is_R_and_facing_is_W
+13/50 Test #13: ExecutorTest.should_return_facing_N_given_command_is_R_and_facing_is_W .................................................................................................................................   Passed    0.01 sec
+      Start 14: ExecutorTest.should_return_facing_E_given_command_is_R_and_facing_is_N
+14/50 Test #14: ExecutorTest.should_return_facing_E_given_command_is_R_and_facing_is_N .................................................................................................................................   Passed    0.01 sec
+      Start 15: ExecutorTest.should_execute_combined_commands_in_order
+15/50 Test #15: ExecutorTest.should_execute_combined_commands_in_order .................................................................................................................................................   Passed    0.01 sec
+      Start 16: ExecutorTest.should_preserve_pose_for_empty_commands_and_continue_across_calls
+16/50 Test #16: ExecutorTest.should_preserve_pose_for_empty_commands_and_continue_across_calls .........................................................................................................................   Passed    0.01 sec
+      Start 17: ExecutorFastTest.should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E
+17/50 Test #17: ExecutorFastTest.should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E ..............................................................................................................   Passed    0.01 sec
+      Start 18: ExecutorFastTest.should_return_N_and_x_plus_1_given_status_is_fast_command_is_L_and_facing_is_E
+18/50 Test #18: ExecutorFastTest.should_return_N_and_x_plus_1_given_status_is_fast_command_is_L_and_facing_is_E ........................................................................................................   Passed    0.01 sec
+      Start 19: ExecutorFastTest.should_return_S_and_x_plus_1_given_status_is_fast_given_command_is_R_and_facing_is_E
+19/50 Test #19: ExecutorFastTest.should_return_S_and_x_plus_1_given_status_is_fast_given_command_is_R_and_facing_is_E ..................................................................................................   Passed    0.01 sec
+      Start 20: ExecutorFastTest.should_return_y_plus_1_given_command_is_FFM_and_facing_is_N
+20/50 Test #20: ExecutorFastTest.should_return_y_plus_1_given_command_is_FFM_and_facing_is_N ...........................................................................................................................   Passed    0.01 sec
+      Start 21: ExecutorFastRegressionTest.should_preserve_pose_when_only_toggling_fast
+21/50 Test #21: ExecutorFastRegressionTest.should_preserve_pose_when_only_toggling_fast ................................................................................................................................   Passed    0.01 sec
+      Start 22: ExecutorFastRegressionTest.should_keep_fast_across_calls_and_empty_commands
+22/50 Test #22: ExecutorFastRegressionTest.should_keep_fast_across_calls_and_empty_commands ............................................................................................................................   Passed    0.01 sec
+      Start 23: ExecutorFastRegressionTest.should_turn_without_moving_after_fast_is_cancelled
+23/50 Test #23: ExecutorFastRegressionTest.should_turn_without_moving_after_fast_is_cancelled ..........................................................................................................................   Passed    0.01 sec
+      Start 24: ExecutorFastRegressionTest.should_follow_slide_example_FMLMLM
+24/50 Test #24: ExecutorFastRegressionTest.should_follow_slide_example_FMLMLM ..........................................................................................................................................   Passed    0.01 sec
+      Start 25: ExecutorFastRegressionTest.should_keep_fast_state_independent_between_executors
+25/50 Test #25: ExecutorFastRegressionTest.should_keep_fast_state_independent_between_executors ........................................................................................................................   Passed    0.01 sec
+      Start 26: ExecutorFastRegressionTest.should_enable_fast_again_after_cancelling
+26/50 Test #26: ExecutorFastRegressionTest.should_enable_fast_again_after_cancelling ...................................................................................................................................   Passed    0.01 sec
+      Start 27: PointTest.compound_addition_returns_self_and_preserves_operand
+27/50 Test #27: PointTest.compound_addition_returns_self_and_preserves_operand .........................................................................................................................................   Passed    0.01 sec
+      Start 28: DirectionTest.all_directions_use_matching_steps_and_turns
+28/50 Test #28: DirectionTest.all_directions_use_matching_steps_and_turns ..............................................................................................................................................   Passed    0.01 sec
+      Start 29: DirectionTest.unknown_heading_defaults_to_north
+29/50 Test #29: DirectionTest.unknown_heading_defaults_to_north ........................................................................................................................................................   Passed    0.01 sec
+      Start 30: CommandTest.function_owns_a_copy_after_source_object_is_destroyed
+30/50 Test #30: CommandTest.function_owns_a_copy_after_source_object_is_destroyed ......................................................................................................................................   Passed    0.01 sec
+      Start 31: CommandTest.stateless_functor_keeps_vehicle_states_independent
+31/50 Test #31: CommandTest.stateless_functor_keeps_vehicle_states_independent .........................................................................................................................................   Passed    0.01 sec
+      Start 32: ExecutorReverseTest.BM_moves_back_one
+32/50 Test #32: ExecutorReverseTest.BM_moves_back_one ..................................................................................................................................................................   Passed    0.01 sec
+      Start 33: ExecutorReverseTest.BL_turns_right
+33/50 Test #33: ExecutorReverseTest.BL_turns_right .....................................................................................................................................................................   Passed    0.01 sec
+      Start 34: ExecutorReverseTest.BR_turns_left
+34/50 Test #34: ExecutorReverseTest.BR_turns_left ......................................................................................................................................................................   Passed    0.01 sec
+      Start 35: ExecutorReverseTest.BBM_cancels_reverse
+35/50 Test #35: ExecutorReverseTest.BBM_cancels_reverse ................................................................................................................................................................   Passed    0.01 sec
+      Start 36: ExecutorReverseFastTest.FBM_moves_back_two
+36/50 Test #36: ExecutorReverseFastTest.FBM_moves_back_two .............................................................................................................................................................   Passed    0.01 sec
+      Start 37: ExecutorReverseFastTest.FBL_moves_back_then_turns_right
+37/50 Test #37: ExecutorReverseFastTest.FBL_moves_back_then_turns_right ................................................................................................................................................   Passed    0.01 sec
+      Start 38: ExecutorReverseFastTest.FBR_moves_back_then_turns_left
+38/50 Test #38: ExecutorReverseFastTest.FBR_moves_back_then_turns_left .................................................................................................................................................   Passed    0.01 sec
+      Start 39: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <4E-2B C1-F2 2E-5F 00-00 24-90 C2-EF 2E-5F 00-00 02-00 00-00 05-00 00-00 4E-00 00-00 00-00 00-00>
+39/50 Test #39: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <4E-2B C1-F2 2E-5F 00-00 24-90 C2-EF 2E-5F 00-00 02-00 00-00 05-00 00-00 4E-00 00-00 00-00 00-00> ...   Passed    0.01 sec
+      Start 40: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <45-00 00-00 00-00 00-00 24-90 C2-EF 2E-5F 00-00 04-00 00-00 03-00 00-00 45-00 00-00 00-00 00-00>
+40/50 Test #40: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <45-00 00-00 00-00 00-00 24-90 C2-EF 2E-5F 00-00 04-00 00-00 03-00 00-00 45-00 00-00 00-00 00-00> ...   Passed    0.01 sec
+      Start 41: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <53-00 00-00 00-00 00-00 24-90 C2-EF 2E-5F 00-00 02-00 00-00 01-00 00-00 53-00 00-00 00-00 00-00>
+41/50 Test #41: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <53-00 00-00 00-00 00-00 24-90 C2-EF 2E-5F 00-00 02-00 00-00 01-00 00-00 53-00 00-00 00-00 00-00> ...   Passed    0.01 sec
+      Start 42: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <57-00 00-00 00-00 00-00 24-90 C2-EF 2E-5F 00-00 00-00 00-00 03-00 00-00 57-00 00-00 00-00 00-00>
+42/50 Test #42: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <57-00 00-00 00-00 00-00 24-90 C2-EF 2E-5F 00-00 00-00 00-00 03-00 00-00 57-00 00-00 00-00 00-00> ...   Passed    0.01 sec
+      Start 43: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <4E-00 00-00 00-00 00-00 21-90 C2-EF 2E-5F 00-00 02-00 00-00 04-00 00-00 57-00 FF-FF 00-00 00-00>
+43/50 Test #43: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <4E-00 00-00 00-00 00-00 21-90 C2-EF 2E-5F 00-00 02-00 00-00 04-00 00-00 57-00 FF-FF 00-00 00-00> ...   Passed    0.01 sec
+      Start 44: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <45-43 07-75 C4-75 00-00 21-90 C2-EF 2E-5F 00-00 03-00 00-00 03-00 00-00 4E-43 07-75 C4-75 00-00>
+44/50 Test #44: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <45-43 07-75 C4-75 00-00 21-90 C2-EF 2E-5F 00-00 03-00 00-00 03-00 00-00 4E-43 07-75 C4-75 00-00> ...   Passed    0.03 sec
+      Start 45: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <53-43 07-75 C4-75 00-00 21-90 C2-EF 2E-5F 00-00 02-00 00-00 02-00 00-00 45-43 07-75 C4-75 00-00>
+45/50 Test #45: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <53-43 07-75 C4-75 00-00 21-90 C2-EF 2E-5F 00-00 02-00 00-00 02-00 00-00 45-43 07-75 C4-75 00-00> ...   Passed    0.01 sec
+      Start 46: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <57-4C 07-75 C4-75 00-00 21-90 C2-EF 2E-5F 00-00 01-00 00-00 03-00 00-00 53-A8 8B-E5 BA-8F E8-AE>
+46/50 Test #46: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <57-4C 07-75 C4-75 00-00 21-90 C2-EF 2E-5F 00-00 01-00 00-00 03-00 00-00 53-A8 8B-E5 BA-8F E8-AE> ...   Passed    0.01 sec
+      Start 47: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <4E-00 00-00 00-00 00-00 1E-90 C2-EF 2E-5F 00-00 02-00 00-00 04-00 00-00 45-00 00-00 00-00 FF-00>
+47/50 Test #47: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <4E-00 00-00 00-00 00-00 1E-90 C2-EF 2E-5F 00-00 02-00 00-00 04-00 00-00 45-00 00-00 00-00 FF-00> ...   Passed    0.01 sec
+      Start 48: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <45-17 93-45 FD-7F 00-00 1E-90 C2-EF 2E-5F 00-00 03-00 00-00 03-00 00-00 53-17 93-45 FD-7F 00-00>
+48/50 Test #48: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <45-17 93-45 FD-7F 00-00 1E-90 C2-EF 2E-5F 00-00 03-00 00-00 03-00 00-00 53-17 93-45 FD-7F 00-00> ...   Passed    0.01 sec
+      Start 49: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <53-00 00-00 00-00 00-00 1E-90 C2-EF 2E-5F 00-00 02-00 00-00 02-00 00-00 57-75 22-75 C4-75 00-00>
+49/50 Test #49: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <53-00 00-00 00-00 00-00 1E-90 C2-EF 2E-5F 00-00 02-00 00-00 02-00 00-00 57-75 22-75 C4-75 00-00> ...   Passed    0.01 sec
+      Start 50: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <57-00 00-00 00-00 00-00 1E-90 C2-EF 2E-5F 00-00 01-00 00-00 03-00 00-00 4E-17 93-45 FD-7F 00-00>
+50/50 Test #50: AllDirections/ExecutorFastDirectionTest.should_apply_fast_command_in_each_direction/32-byte object <57-00 00-00 00-00 00-00 1E-90 C2-EF 2E-5F 00-00 01-00 00-00 03-00 00-00 4E-17 93-45 FD-7F 00-00> ...   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 50
+
+Total Test time (real) =   1.05 sec

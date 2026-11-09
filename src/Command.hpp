@@ -26,7 +26,8 @@ namespace adas {
             {
                 executor.Move();
             }
-            executor.TurnLeft();
+            if (executor.IsReverse()) { executor.TurnRight(); }
+            else { executor.TurnLeft(); }
         }
     };
 
@@ -39,7 +40,8 @@ namespace adas {
             {
                 executor.Move();
             }
-            executor.TurnRight();
+            if (executor.IsReverse()) { executor.TurnLeft(); }
+            else { executor.TurnRight(); }
         }
     };
 
@@ -49,6 +51,15 @@ namespace adas {
         void operator()(PoseHandler& executor) const noexcept
         {
             executor.Fast();
+        }
+    };
+
+    class ReverseCommand final
+    {
+    public:
+        void operator()(PoseHandler& executor) const noexcept
+        {
+            executor.Reverse();
         }
     };
 
