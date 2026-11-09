@@ -3,6 +3,7 @@
 
 #include <new>
 #include <memory>
+#include <unordered_map>
 
 namespace adas {
 
@@ -20,28 +21,20 @@ Executor *Executor::NewExecutor(const Pose &pose) noexcept
 
 void ExecutorImpl::Execute(const std::string &commands) noexcept
 {
+    const std::unordered_map<char, std::unique_ptr<ICommand>> cmderMap = [] {
+        std::unordered_map<char, std::unique_ptr<ICommand>> table;
+        table.emplace('M', std::make_unique<MoveCommand>());
+        table.emplace('L', std::make_unique<TurnLeftCommand>());
+        table.emplace('R', std::make_unique<TurnRightCommand>());
+        table.emplace('F', std::make_unique<FastCommand>());
+        return table;
+    }();
     for (const auto cmd : commands)
     {
-        std::unique_ptr<ICommand> cmder;
-        if (cmd == 'M')
+        const auto it = cmderMap.find(cmd);
+        if (it != cmderMap.end())
         {
-            cmder = std::make_unique<MoveCommand>();
-        }
-        else if (cmd == 'L')
-        {
-            cmder = std::make_unique<TurnLeftCommand>();
-        }
-        else if (cmd == 'R')
-        {
-            cmder = std::make_unique<TurnRightCommand>();
-        }
-        else if (cmd == 'F')
-        {
-            cmder = std::make_unique<FastCommand>();
-        }
-        if (cmder)
-        {
-            cmder->DoOperate(poseHandler);
+            it->second->DoOperate(poseHandler);
         }
     }
 }
