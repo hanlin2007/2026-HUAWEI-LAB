@@ -15,6 +15,19 @@ TEST(PointTest, compound_addition_returns_self_and_preserves_operand) {
     EXPECT_EQ(-2, copy.GetX());
     EXPECT_EQ(1, point.GetX());
 }
+TEST(PointTest, subtraction_undoes_addition_and_handles_self_subtraction) {
+    Point point{3, -4};
+    const Point delta{-2, 5};
+    point += delta;
+    EXPECT_EQ(&point, &(point -= delta));
+    EXPECT_EQ(3, point.GetX());
+    EXPECT_EQ(-4, point.GetY());
+    point -= point;
+    EXPECT_EQ(0, point.GetX());
+    EXPECT_EQ(0, point.GetY());
+    EXPECT_EQ(-2, delta.GetX());
+    EXPECT_EQ(5, delta.GetY());
+}
 TEST(DirectionTest, all_directions_use_matching_steps_and_turns) {
     const char headings[] = {'E', 'S', 'W', 'N'};
     const int dx[] = {1, 0, -1, 0};

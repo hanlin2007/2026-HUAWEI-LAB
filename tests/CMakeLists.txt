@@ -9,6 +9,7 @@ add_executable(adas_tests
     CommandTest.cpp
     ExecutorReverseTest.cpp
     ExecutorReverseFastTest.cpp
+    ExecutorReverseRegressionTest.cpp
     PoseEq.cpp
 )
 target_link_libraries(adas_tests PRIVATE adas gtest_main)
