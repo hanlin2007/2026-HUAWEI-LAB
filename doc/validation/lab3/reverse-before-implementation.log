@@ -1,0 +1,72 @@
+Running main() from /mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/googletest/googletest/src/gtest_main.cc
+Note: Google Test filter = ExecutorReverseTest.*:ExecutorReverseFastTest.*
+[==========] Running 7 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 4 tests from ExecutorReverseTest
+[ RUN      ] ExecutorReverseTest.BM_moves_back_one
+/mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/ExecutorReverseTest.cpp:15: Failure
+Expected equality of these values:
+  target
+    Which is: 12-byte object <FF-FF FF-FF 00-00 00-00 45-EB 94-E1>
+  executor->Query()
+    Which is: 12-byte object <01-00 00-00 00-00 00-00 45-7F 00-00>
+[  FAILED  ] ExecutorReverseTest.BM_moves_back_one (0 ms)
+[ RUN      ] ExecutorReverseTest.BL_turns_right
+/mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/ExecutorReverseTest.cpp:25: Failure
+Expected equality of these values:
+  target
+    Which is: 12-byte object <00-00 00-00 00-00 00-00 53-EB 94-E1>
+  executor->Query()
+    Which is: 12-byte object <00-00 00-00 00-00 00-00 4E-7F 00-00>
+[  FAILED  ] ExecutorReverseTest.BL_turns_right (0 ms)
+[ RUN      ] ExecutorReverseTest.BR_turns_left
+/mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/ExecutorReverseTest.cpp:35: Failure
+Expected equality of these values:
+  target
+    Which is: 12-byte object <00-00 00-00 00-00 00-00 4E-EB 94-E1>
+  executor->Query()
+    Which is: 12-byte object <00-00 00-00 00-00 00-00 53-7F 00-00>
+[  FAILED  ] ExecutorReverseTest.BR_turns_left (0 ms)
+[ RUN      ] ExecutorReverseTest.BBM_cancels_reverse
+[       OK ] ExecutorReverseTest.BBM_cancels_reverse (0 ms)
+[----------] 4 tests from ExecutorReverseTest (2 ms total)
+
+[----------] 3 tests from ExecutorReverseFastTest
+[ RUN      ] ExecutorReverseFastTest.FBM_moves_back_two
+/mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/ExecutorReverseFastTest.cpp:15: Failure
+Expected equality of these values:
+  target
+    Which is: 12-byte object <FE-FF FF-FF 00-00 00-00 45-EB 94-E1>
+  executor->Query()
+    Which is: 12-byte object <02-00 00-00 00-00 00-00 45-7F 00-00>
+[  FAILED  ] ExecutorReverseFastTest.FBM_moves_back_two (0 ms)
+[ RUN      ] ExecutorReverseFastTest.FBL_moves_back_then_turns_right
+/mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/ExecutorReverseFastTest.cpp:25: Failure
+Expected equality of these values:
+  target
+    Which is: 12-byte object <FF-FF FF-FF 00-00 00-00 53-EB 94-E1>
+  executor->Query()
+    Which is: 12-byte object <01-00 00-00 00-00 00-00 4E-7F 00-00>
+[  FAILED  ] ExecutorReverseFastTest.FBL_moves_back_then_turns_right (0 ms)
+[ RUN      ] ExecutorReverseFastTest.FBR_moves_back_then_turns_left
+/mnt/c/Users/lihanlin2007/Desktop/大二上学期/第一阶段/C++程序设计/Lab_HUAWEI/tests/ExecutorReverseFastTest.cpp:35: Failure
+Expected equality of these values:
+  target
+    Which is: 12-byte object <FF-FF FF-FF 00-00 00-00 4E-EB 94-E1>
+  executor->Query()
+    Which is: 12-byte object <01-00 00-00 00-00 00-00 53-7F 00-00>
+[  FAILED  ] ExecutorReverseFastTest.FBR_moves_back_then_turns_left (0 ms)
+[----------] 3 tests from ExecutorReverseFastTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 2 test suites ran. (4 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 6 tests, listed below:
+[  FAILED  ] ExecutorReverseTest.BM_moves_back_one
+[  FAILED  ] ExecutorReverseTest.BL_turns_right
+[  FAILED  ] ExecutorReverseTest.BR_turns_left
+[  FAILED  ] ExecutorReverseFastTest.FBM_moves_back_two
+[  FAILED  ] ExecutorReverseFastTest.FBL_moves_back_then_turns_right
+[  FAILED  ] ExecutorReverseFastTest.FBR_moves_back_then_turns_left
+
+ 6 FAILED TESTS
